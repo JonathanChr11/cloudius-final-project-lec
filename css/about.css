@@ -22,6 +22,34 @@
     gap: 20px;
 }
 
+.display-1 {
+    padding-top: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#isi-about > .lead {
+    text-align: center;
+    padding-inline: 2rem;
+}
+ 
+#isi-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#isi-about > img {
+    width: 60%;
+    padding-block: 1rem;
+    margin-bottom: 2rem;
+}
+
+#mission {
+    padding-inline: 2rem;
+    margin-block: 2rem;
+}
+
 @media screen and (max-width: 991px) {
     .btn-primary {
         margin-top: 20px;
