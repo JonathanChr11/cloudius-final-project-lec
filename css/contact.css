@@ -1,31 +1,24 @@
+:root {
+    --primary: #ffe500;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.container-fluid {
-    gap: 20px;
-}
-
 .nav-logo {
-    width: 150px;
-    height: 60px;
+    width: 125px;
+    height: 50px;
 }
 
-.navbar-nav {
-    gap: 20px;
+.active {
+    color: var(--primary) !important;
 }
 
-@media screen and (max-width: 991px) {
-    .btn-primary {
-        margin-top: 20px;
-    }
+.nav-item .nav-link:hover {
+    color: var(--primary);
 }
 
 #topcont {
@@ -43,17 +36,48 @@
     text-align: start;
     justify-content: center;
     align-items: center;
-    
 }
- 
+
 #contact {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     align-items:center;
-     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .col-sm-5 {
     padding: 4px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-left {
+    width: 40%;
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary) !important;
+}
+
+.btn-outline-dark:hover {
+    color: var(--primary);
+}
+
+hr {
+    width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-left {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-button {
+        margin-top: 20px;
+    }
 }

@@ -29,6 +29,14 @@
     width: 200px;
 }
 
+#topfaq {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-block: 5px;
+}
+
 footer a {
     text-decoration: none;
 }
@@ -59,12 +67,4 @@ hr {
     .nav-button {
         margin-top: 20px;
     }
-}
-
-#topfaq {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-block: 5px;
 }
