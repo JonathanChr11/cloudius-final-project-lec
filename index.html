@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.png"
+            type="image/x-icon"
+        />
+        <title>Cloudius</title>
+
+        <!-- CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/base/base.css" />
+        <link rel="stylesheet" href="./css/home.css" />
+        <!-- JS -->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body sticky-top">
+            <div class="container-fluid mx-sm-5 mx-0">
+                <a class="navbar-brand" href="#">
+                    <img
+                        class="nav-logo"
+                        src="./assets/logo-cloudius.png"
+                        alt=""
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hosting.html">Hosting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="domain.html">Domain</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto pb-lg-0 pb-3">
+                        <a
+                            href="contact.html"
+                            class="btn btn-primary nav-button"
+                        >
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Landing Page -->
+        <div
+            class="container d-flex flex-column justify-content-center text-left"
+        >
+            <div class="row d-flex flex-lg-row flex-column-reverse">
+                <div
+                    class="col d-flex flex-column justify-content-center align-items-lg-start align-items-center gap-3"
+                >
+                    <p class="h1 w-75 text-lg-start text-center">
+                        Grow your business with our best services
+                    </p>
+                    <p class="h6 text-lg-start text-center">
+                        Everything you need for your website is available here.
+                        <br />
+                        Supported by a cloud-based server with the best
+                        features.
+                    </p>
+                    <div class="input-group mb-3 w-75">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Search your domain now"
+                            aria-label="Search your domain now"
+                            aria-describedby="button-addon2"
+                        />
+                        <button
+                            class="btn btn-primary"
+                            type="button"
+                            id="button-addon2"
+                        >
+                            Search
+                        </button>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <img
+                            class="star-round"
+                            src="./assets/star-round.svg"
+                            alt=""
+                        />
+                        <p class="h6 mb-0">
+                            Rated 4.8/5 from over 1200 reviews.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="col d-flex justify-content-center align-items-center"
+                >
+                    <img
+                        class="w-100"
+                        src="./assets/cloud-hosting-bro.svg"
+                        alt=""
+                    />
+                </div>
+            </div>
+
+            <!-- Partnerships -->
+            <div
+                class="d-flex flex-wrap justify-content-lg-between justify-content-center gap-5 mt-lg-2 mt-5"
+            >
+                <img
+                    class="logo-brands"
+                    src="./assets/brands/google.svg"
+                    alt=""
+                />
+                <img
+                    class="logo-brands"
+                    src="./assets/brands/pinterest.svg"
+                    alt=""
+                />
+                <img
+                    class="logo-brands"
+                    src="./assets/brands/reddit.svg"
+                    alt=""
+                />
+                <img
+                    class="logo-brands"
+                    src="./assets/brands/spotify.svg"
+                    alt=""
+                />
+                <img
+                    class="logo-brands"
+                    src="./assets/brands/facebook.svg"
+                    alt=""
+                />
+            </div>
+        </div>
+
+        <!-- Experiences -->
+        <div
+            class="container bg-primary text-center p-5 my-5 rounded-3 text-dark"
+        >
+            <div class="row">
+                <div class="col">
+                    <p class="h1">20<sub>+</sub></p>
+                    <p>Years Experience</p>
+                </div>
+                <div class="col">
+                    <p class="h1">100k<sub>+</sub></p>
+                    <p>Our Customers</p>
+                </div>
+                <div class="col">
+                    <p class="h1">100<sub>+</sub></p>
+                    <p>Team</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div
+                class="row d-flex align-items-center flex-lg-row flex-column-reverse"
+            >
+                <div
+                    class="col d-flex flex-column justify-content-center align-items-lg-start align-items-center"
+                >
+                    <p class="h1 w-75 text-lg-start text-center">
+                        Create a business that is growing rapidly and
+                        significantly
+                    </p>
+                    <p class="h6 text-lg-start text-center mt-lg-0 mt-3">
+                        The software company offers a range of products designed
+                        to help remote workers stay organized, collaborate
+                        effectively, and manage their time more efficiently. Its
+                        flagship product is a project management tool.
+                    </p>
+                    <div class="d-flex gap-5 mt-5">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <i
+                                    class="fa-regular fa-circle-check text-primary"
+                                ></i>
+                                <p class="mb-0">Customer Service 24h</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i
+                                    class="fa-regular fa-circle-check text-primary"
+                                ></i>
+                                <p class="mb-0">Optimum Pride</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <i
+                                    class="fa-regular fa-circle-check text-primary"
+                                ></i>
+                                <p class="mb-0">Advanced Technology</p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <i
+                                    class="fa-regular fa-circle-check text-primary"
+                                ></i>
+                                <p class="mb-0">Easy and Free Migration</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-link mt-4">
+                        Learn More
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="./assets/growing.svg" alt="" />
+                </div>
+            </div>
+        </div>
+        <!-- Data Centers -->
+        <div class="container text-center mt-lg-0 mt-5">
+            <p class="h1">Data Centers Around the World</p>
+            <p class="h6 mt-3">
+                Powering the digital world: Inside our state-of-the-art data
+                center
+            </p>
+            <button type="button" class="btn btn-link mt-4">
+                View All Countries
+            </button>
+            <img class="w-100 mt-5" src="./assets/world-map.svg" alt="" />
+        </div>
+        <!-- Plan -->
+
+        <!-- Testimoni -->
+
+        <!-- FAQ -->
+        <div id="FAQ">
+            <div id="topfaq">
+                <h1>FAQ</h1>
+                Check Out The most Frequently Asked Question
+            </div>
+            <div id="isifaq">
+                <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseOne"
+                            >
+                                <h5>What is meant by hosting?</h5>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Hosting refers to the act of storing and making
+                                websites accessible on the internet. When you
+                                create a website, its files need to be stored on
+                                a server, which is a specialized computer. Web
+                                hosting companies provide the infrastructure and
+                                services necessary for hosting, renting out
+                                server space or resources. Once your website
+                                files are uploaded to the server, anyone with an
+                                internet connection can access it using your
+                                domain name. Hosting providers ensure your
+                                website is available 24/7, handle data
+                                transfers, manage server security, and offer
+                                technical support. There are various types of
+                                hosting, each catering to different website
+                                needs. In essence, hosting enables websites to
+                                be accessed and viewed by visitors through the
+                                internet.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseTwo"
+                            >
+                                <h5>How does web hosting work?</h5>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseTwo"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Web hosting works by storing and serving website
+                                files on powerful servers connected to the
+                                internet. When you sign up for a hosting
+                                service, you rent server space from a hosting
+                                provider. You then upload your website files to
+                                this server, which becomes accessible via your
+                                domain name. When visitors enter your domain
+                                name into a web browser, their request is routed
+                                to the hosting server. The server retrieves the
+                                requested files and delivers them to the
+                                visitor's browser, enabling them to view your
+                                website. Hosting providers ensure the server is
+                                continuously operational, manage data transfers,
+                                and provide necessary security measures. In
+                                summary, web hosting involves storing website
+                                files on servers and making them available for
+                                access, allowing visitors to view the website
+                                through their browsers.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseThree"
+                            >
+                                <h5>Why do I need hosting?</h5>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseThree"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                You need hosting for your website because it
+                                provides the necessary infrastructure and
+                                resources to make your website accessible on the
+                                internet. Hosting servers store your website
+                                files and deliver them to visitors when they
+                                access your website through their browsers. By
+                                utilizing a hosting service, you ensure that
+                                your website is available 24/7, allowing users
+                                from anywhere in the world to access it at any
+                                time. Hosting also offers data transfer, server
+                                security, and technical support, ensuring smooth
+                                operation and optimal performance of your
+                                website. In essence, hosting is essential for
+                                establishing an online presence and enabling
+                                people to find and interact with your website on
+                                the internet.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseFour"
+                            >
+                                <h5>Will I get help with web hosting?</h5>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseFour"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Yes, you can receive help with web hosting.
+                                Hosting providers typically offer technical
+                                support to assist you with any issues or
+                                questions you may have regarding your hosting
+                                service. This support can range from general
+                                inquiries about setting up your website to
+                                troubleshooting technical problems. Hosting
+                                companies may provide support through various
+                                channels, such as live chat, email, or phone.
+                                Additionally, many hosting providers have
+                                comprehensive knowledge bases, tutorials, and
+                                documentation available to help you navigate and
+                                make the most of your hosting service. With the
+                                assistance provided by hosting companies, you
+                                can ensure a smoother experience in managing
+                                your website hosting and addressing any concerns
+                                that may arise.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseFive"
+                            >
+                                <h5>
+                                    What's the difference between domain and
+                                    hosting?
+                                </h5>
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseFive"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                The main difference between a domain and hosting
+                                lies in their respective roles in establishing a
+                                website's online presence. A domain is the
+                                unique web address that people type into their
+                                browsers to access a website (e.g.,
+                                www.example.com). It serves as a user-friendly
+                                identifier for your website. On the other hand,
+                                hosting refers to the service that provides the
+                                infrastructure and resources necessary to store
+                                and make your website accessible on the
+                                internet. Hosting involves renting server space
+                                where your website's files, such as HTML, CSS,
+                                images, and databases, are stored. In simpler
+                                terms, a domain is like your website's address,
+                                while hosting is the physical space where your
+                                website's content resides. Both domain and
+                                hosting are crucial components for a website,
+                                with the domain providing the address and
+                                hosting enabling the website to be accessed and
+                                viewed online.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer
+            class="text-center text-lg-start bg-dark text-muted"
+            data-bs-theme="dark"
+        >
+            <!-- Section: Links  -->
+            <section class="p-5">
+                <div
+                    class="container bg-primary text-dark text-start p-5 rounded-3"
+                >
+                    <div class="row">
+                        <div
+                            class="col d-flex justify-content-sm-start justify-content-center"
+                        >
+                            <p class="h1 w-75 text-sm-start text-center">
+                                Make your business dreams come true
+                            </p>
+                        </div>
+                        <div
+                            class="col d-flex flex-column gap-3 text-sm-start text-center"
+                        >
+                            <p>
+                                Starting a business can be a daunting task, but
+                                with passion, perseverance, and the right
+                                resources, you can turn your business.
+                            </p>
+                            <div class="d-flex flex-md-row flex-column gap-4">
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary bg-dark border-dark"
+                                >
+                                    Get Started
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-dark"
+                                >
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div
+                        class="d-flex justify-content-between align-items-lg-start align-items-center flex-lg-row flex-column mt-5"
+                    >
+                        <!-- Grid column -->
+                        <div
+                            class="d-flex flex-column align-items-lg-start align-items-md-center mb-4 text-lg-start gap-3 text-md-center mb-lg-0 mb-md-5"
+                        >
+                            <!-- Content -->
+                            <img src="./assets/logo-cloudius.png" alt="" />
+                            <p class="footer-left m-md-0 m-auto">
+                                The best web hosting service with the most
+                                complete hosting features and 24-hour support
+                            </p>
+                            <div class="mt-3">
+                                <a class="me-4 text-reset" href=""
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                                <a class="me-4 text-reset" href=""
+                                    ><i class="fab fa-facebook"></i
+                                ></a>
+                                <a href="" class="text-reset">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <!-- <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-github"></i>
+                                </a> -->
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex flex-md-row flex-column align-items-md-start align-items-center gap-5"
+                        >
+                            <div
+                                class="d-flex flex-sm-row flex-column gap-5 mt-md-0 mt-5"
+                            >
+                                <!-- Grid column -->
+                                <div class="mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Platform
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Unlimited Hosting</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">VPS</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Domain</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Website Service</a
+                                        >
+                                    </p>
+                                </div>
+
+                                <!-- Grid column -->
+                                <div class="mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Solutions
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Start a Trial</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >How It Works</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Features</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Examples</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-sm-row flex-column gap-5">
+                                <!-- Grid column -->
+                                <div class="mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Company
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >About</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Terms</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Blog</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Careers</a
+                                        >
+                                    </p>
+                                </div>
+
+                                <!-- Grid column -->
+                                <div class="mb-sm-4 mb-0">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        About Us
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Points</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Become Partner</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Affiliate Program</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="m-auto" />
+            <!-- Copyright -->
+            <div
+                class="container d-flex flex-md-row flex-column justify-content-between"
+            >
+                <div class="pt-4">
+                    © 2023
+                    <a class="text-reset fw-bold" href="index.html"
+                        >Cloudius.com</a
+                    >
+                </div>
+                <div class="p-4 d-flex justify-content-center gap-5">
+                    <a class="text-reset fw-bold" href="index.html">Privacy</a>
+                    <a class="text-reset fw-bold" href="index.html"
+                        >Terms of Use</a
+                    >
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
