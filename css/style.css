@@ -21,6 +21,14 @@
     color: var(--primary);
 }
 
+.star-round {
+    width: 25px;
+}
+
+.logo-brands {
+    width: 200px;
+}
+
 footer a {
     text-decoration: none;
 }
