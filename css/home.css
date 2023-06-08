@@ -29,6 +29,45 @@
     width: 200px;
 }
 
+.logo-brands-medium {
+    width: 250px;
+}
+
+.card{
+    padding: 20px;
+    padding-inline: 40px;
+}
+
+.center-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-block: 5px;
+    gap: 25px;
+}
+
+.card-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-block: 5px;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.big-num {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.prof-pic{
+    width: 75px;
+}
+
 #topfaq {
     display: flex;
     flex-direction: column;
