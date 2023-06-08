@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "npm install && sass scss/custom.scss css/base/base.css",
+        "build": "npm install && sass scss/_custom.scss css/base/base.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
