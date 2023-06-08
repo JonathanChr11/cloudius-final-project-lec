@@ -4,37 +4,37 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="./assets/favicon.png"
+            type="image/x-icon"
+        />
         <title>About</title>
 
         <!-- CSS -->
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
-            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
             crossorigin="anonymous"
+            referrerpolicy="no-referrer"
         />
+        <link rel="stylesheet" href="./css/base/base.css" />
         <link rel="stylesheet" href="./css/about.css" />
         <!-- JS -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"
-        ></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     </head>
     <body>
         <!-- Navbar -->
-        <nav
-            class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark sticky-top"
-            data-bs-theme="dark"
-        >
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"
-                    ><img
+        <nav class="navbar navbar-expand-lg bg-body sticky-top">
+            <div class="container-fluid mx-sm-5 mx-0">
+                <a class="navbar-brand" href="#">
+                    <img
                         class="nav-logo"
                         src="./assets/logo-cloudius.png"
                         alt=""
-                /></a>
+                    />
+                </a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -50,17 +50,17 @@
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                aria-current="page"
-                                href="index.html"
-                                >Home</a
-                            >
+                            <a class="nav-link" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About</a>
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="about.html"
+                                >About</a
+                            >
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="hosting.html">Hosting</a>
@@ -69,9 +69,14 @@
                             <a class="nav-link" href="domain.html">Domain</a>
                         </li>
                     </ul>
-                    <button class="btn btn-primary">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </button>
+                    <div class="d-flex ms-auto pb-lg-0 pb-3">
+                        <a
+                            href="contact.html"
+                            class="btn btn-primary nav-button"
+                        >
+                            Contact
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -80,84 +85,402 @@
         <div class="container-fluid" id="isi-about">
             <h1 class="display-1">We are Cloudius</h1>
             <p class="lead">
-                "We believe that the <b>internet</b> can make the world a more open and connected place, that everyone can create their web presence without hassle, and by owning a piece of the <b>internet</b>, everyone should be able to express their thoughts and ideas, and we are passionate <b>about being a part of it</b>"
+                "We believe that the <b>internet</b> can make the world a more
+                open and connected place, that everyone can create their web
+                presence without hassle, and by owning a piece of the
+                <b>internet</b>, everyone should be able to express their
+                thoughts and ideas, and we are passionate
+                <b>about being a part of it</b>"
             </p>
-            <img src="assets\about-us.png" class="img-fluid rounded" alt="About Image">
+            <img
+                src="assets\about-us.png"
+                class="img-fluid rounded"
+                alt="About Image"
+            />
         </div>
 
         <div class="container-fluid" id="mission">
-            <h1 class="display-4">
-                Our Vision & Mission
-            </h1>
-            <br>
-            <p class="lead"> <b>Vision</b> </p>
-            <p>At Cloudius, our vision is to revolutionize the way businesses leverage the power of the cloud. We strive to be a leading provider of innovative cloud solutions, empowering organizations to thrive in the digital era.</p>
+            <h1 class="display-4">Our Vision & Mission</h1>
+            <br />
+            <p class="lead"><b>Vision</b></p>
+            <p>
+                At Cloudius, our vision is to revolutionize the way businesses
+                leverage the power of the cloud. We strive to be a leading
+                provider of innovative cloud solutions, empowering organizations
+                to thrive in the digital era.
+            </p>
 
-            <br>
-            <p class="lead"> <b>Mission</b> </p>
-            <p>Our mission is to deliver cutting-edge cloud services that enable businesses to accelerate their growth, enhance operational efficiency, and unlock new opportunities. We are committed to providing reliable, secure, and scalable cloud infrastructure, coupled with exceptional customer support, to help our clients succeed in an increasingly competitive marketplace.</p>
+            <br />
+            <p class="lead"><b>Mission</b></p>
+            <p>
+                Our mission is to deliver cutting-edge cloud services that
+                enable businesses to accelerate their growth, enhance
+                operational efficiency, and unlock new opportunities. We are
+                committed to providing reliable, secure, and scalable cloud
+                infrastructure, coupled with exceptional customer support, to
+                help our clients succeed in an increasingly competitive
+                marketplace.
+            </p>
         </div>
 
         <div class="container-fluid" id="mission">
-            <h1 class="display-4">
-                Why Us?
-            </h1>
+            <h1 class="display-4">Why Us?</h1>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <h5>Reliable Infrastructure</h5>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">We have invested in state-of-the-art infrastructure and technology to ensure maximum uptime and performance for your websites. Our robust servers and data centers are equipped with the latest security measures to safeguard your data.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      <h5>Unparalleled Support</h5>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Our dedicated support team is available 24/7 to assist you with any technical queries or concerns. We believe in building long-term relationships with our customers and are committed to providing prompt and reliable support whenever you need it.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      <h5>Easy-to-Use Control Panel</h5>
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        We offer a user-friendly control panel that simplifies the management of your domain and hosting settings. With just a few clicks, you can effortlessly configure email accounts, install applications, and monitor your website's performance.</div>
-                  </div>
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                        >
+                            <h5>Reliable Infrastructure</h5>
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            We have invested in state-of-the-art infrastructure
+                            and technology to ensure maximum uptime and
+                            performance for your websites. Our robust servers
+                            and data centers are equipped with the latest
+                            security measures to safeguard your data.
+                        </div>
+                    </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        <h5>Affordable Pricing</h5>
-                      </button>
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseTwo"
+                        >
+                            <h5>Unparalleled Support</h5>
+                        </button>
                     </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">We understand the importance of cost-effectiveness, especially for startups and small businesses. That's why we offer competitive pricing plans without compromising on the quality of our services. Our packages are designed to cater to your specific needs, whether you're just starting or looking to scale your online presence.</div>
+                    <div
+                        id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            Our dedicated support team is available 24/7 to
+                            assist you with any technical queries or concerns.
+                            We believe in building long-term relationships with
+                            our customers and are committed to providing prompt
+                            and reliable support whenever you need it.
+                        </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
+                </div>
+                <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        <h5>Extensive Domain Options</h5>
-                      </button>
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseThree"
+                        >
+                            <h5>Easy-to-Use Control Panel</h5>
+                        </button>
                     </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body">We provide a wide range of domain extensions to choose from, allowing you to create a unique and memorable online identity. Whether you're looking for a .com, .net, .org, or any other TLD, we've got you covered.</div>
+                    <div
+                        id="flush-collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            We offer a user-friendly control panel that
+                            simplifies the management of your domain and hosting
+                            settings. With just a few clicks, you can
+                            effortlessly configure email accounts, install
+                            applications, and monitor your website's
+                            performance.
+                        </div>
                     </div>
-                  </div>
-              </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseFour"
+                        >
+                            <h5>Affordable Pricing</h5>
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseFour"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            We understand the importance of cost-effectiveness,
+                            especially for startups and small businesses. That's
+                            why we offer competitive pricing plans without
+                            compromising on the quality of our services. Our
+                            packages are designed to cater to your specific
+                            needs, whether you're just starting or looking to
+                            scale your online presence.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseFive"
+                        >
+                            <h5>Extensive Domain Options</h5>
+                        </button>
+                    </h2>
+                    <div
+                        id="flush-collapseFive"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample"
+                    >
+                        <div class="accordion-body">
+                            We provide a wide range of domain extensions to
+                            choose from, allowing you to create a unique and
+                            memorable online identity. Whether you're looking
+                            for a .com, .net, .org, or any other TLD, we've got
+                            you covered.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        
         <!-- Footer -->
+        <footer
+            class="text-center text-lg-start bg-dark text-muted"
+            data-bs-theme="dark"
+        >
+            <!-- Section: Links  -->
+            <section class="p-5">
+                <div
+                    class="container bg-primary text-dark text-start p-5 rounded-3"
+                >
+                    <div class="row">
+                        <div
+                            class="col d-flex justify-content-sm-start justify-content-center"
+                        >
+                            <p class="h1 w-75 text-sm-start text-center">
+                                Make your business dreams come true
+                            </p>
+                        </div>
+                        <div
+                            class="col d-flex flex-column gap-3 text-sm-start text-center"
+                        >
+                            <p>
+                                Starting a business can be a daunting task, but
+                                with passion, perseverance, and the right
+                                resources, you can turn your business.
+                            </p>
+                            <div class="d-flex flex-md-row flex-column gap-4">
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary bg-dark border-dark"
+                                >
+                                    Get Started
+                                </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-dark"
+                                >
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div
+                        class="d-flex justify-content-between align-items-lg-start align-items-center flex-lg-row flex-column mt-5"
+                    >
+                        <!-- Grid column -->
+                        <div
+                            class="d-flex flex-column align-items-lg-start align-items-md-center mb-4 text-lg-start gap-3 text-md-center mb-lg-0 mb-md-5"
+                        >
+                            <!-- Content -->
+                            <img src="./assets/logo-cloudius.png" alt="" />
+                            <p class="footer-left m-md-0 m-auto">
+                                The best web hosting service with the most
+                                complete hosting features and 24-hour support
+                            </p>
+                            <div class="mt-3">
+                                <a class="me-4 text-reset" href=""
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                                <a class="me-4 text-reset" href=""
+                                    ><i class="fab fa-facebook"></i
+                                ></a>
+                                <a href="" class="text-reset">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <!-- <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="" class="me-4 text-reset">
+                                    <i class="fab fa-github"></i>
+                                </a> -->
+                            </div>
+                        </div>
+
+                        <div
+                            class="d-flex flex-md-row flex-column align-items-md-start align-items-center gap-5"
+                        >
+                            <div
+                                class="d-flex flex-sm-row flex-column gap-5 mt-md-0 mt-5"
+                            >
+                                <!-- Grid column -->
+                                <div class="mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Platform
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Unlimited Hosting</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">VPS</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Domain</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Website Service</a
+                                        >
+                                    </p>
+                                </div>
+
+                                <!-- Grid column -->
+                                <div class="mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Solutions
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Start a Trial</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >How It Works</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Features</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Examples</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-sm-row flex-column gap-5">
+                                <!-- Grid column -->
+                                <div class="mb-4">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Company
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >About</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Terms</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Blog</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Careers</a
+                                        >
+                                    </p>
+                                </div>
+
+                                <!-- Grid column -->
+                                <div class="mb-sm-4 mb-0">
+                                    <!-- Links -->
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        About Us
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Points</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Become Partner</a
+                                        >
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset"
+                                            >Affiliate Program</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="m-auto" />
+            <!-- Copyright -->
+            <div
+                class="container d-flex flex-md-row flex-column justify-content-between"
+            >
+                <div class="pt-4">
+                    © 2023
+                    <a class="text-reset fw-bold" href="home.html"
+                        >Cloudius.com</a
+                    >
+                </div>
+                <div class="p-4 d-flex justify-content-center gap-5">
+                    <a class="text-reset fw-bold" href="home.html">Privacy</a>
+                    <a class="text-reset fw-bold" href="home.html"
+                        >Terms of Use</a
+                    >
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
