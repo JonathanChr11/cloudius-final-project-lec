@@ -38,10 +38,10 @@ footer a {
 }
 
 .btn-outline-primary:hover {
-    background: transparent !important;
+    background: var(--primary) !important;
 }
 
-.btn-outline-light:hover {
+.btn-outline-dark:hover {
     color: var(--primary);
 }
 
