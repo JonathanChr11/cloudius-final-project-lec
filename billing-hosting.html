@@ -9,7 +9,7 @@
             href="./assets/favicon.png"
             type="image/x-icon"
         />
-        <title>BillingDomain</title>
+        <title>BillingHosting</title>
 
         <!-- CSS -->
         <link
@@ -20,7 +20,7 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="./css/base/base.css" />
-        <link rel="stylesheet" href="./css/billing.css" />
+        <link rel="stylesheet" href="./css/billingHost.css" />
         <!-- JS -->
         <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
@@ -59,14 +59,14 @@
                     </li>
                     <li class="nav-item">
                         <a
-                            class="nav-link"
+                            class="nav-link active"
                             aria-current="page"
-                            href="purchaseHosting.html"
+                            href="hosting.html"
                             >Hosting</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="purchaseDomain.html">Domain</a>
+                        <a class="nav-link" href="domain.html">Domain</a>
                     </li>
                 </ul>
                 <div class="d-flex ms-auto pb-lg-0 pb-3">
@@ -80,39 +80,25 @@
             </div>
         </div>
     </nav>
-
-    <!--billing-->
+    <!--BillingHosting-->
     <div id="wrapper">
         <div id="topbil">
             <div>
-                <h1>Register Your Domain</h1>
+                <h1>Web Hosting Order</h1>
                 Ease of ordering domain names and other services
             </div>
             <hr class="w-100" />
         </div>
         <div id="midbil">
-            <div class="col-sm-5">
-                <label class="" for="specificSizeSelect"
-                    ><b>Domain Name</b></label
-                >
-                <input
-                    type="text"
-                    class="form-control"
-                    id="formGroupExampleInput"
-                    placeholder="JohnDoe.com"
-                />
-        </div>
         <div class="col-sm-5">
             <label class="" for="specificSizeSelect"
-                ><b>Duration</b></label
+                ><b>Select Your Plan:</b></label
             >
             <select class="form-select" id="specificSizeSelect">
                 <option selected>Choose...</option>
-                <option value="1">1 Year</option>
-                <option value="2">2 Year</option>
-                <option value="3">3 Year</option>
-                <option value="4">4 Year</option>
-                <option value="5">5 Year</option>
+                <option value="1">Personal Plan</option>
+                <option value="2">Premium Plan</option>
+                <option value="3">Business Plan (Best Value!)</option>
             </select>
         </div>
         <div class="col-sm-5">
@@ -157,6 +143,7 @@
                 />
         </div>
     </div>
+    <!--footer-->
     <footer
     class="text-center text-lg-start bg-dark text-muted"
     data-bs-theme="dark"
@@ -371,6 +358,5 @@
         </div>
     </div>
 </footer>
-<script src="./js/billing.js"></script>
 </body>
 </html>
