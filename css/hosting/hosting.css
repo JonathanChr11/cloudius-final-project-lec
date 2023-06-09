@@ -29,7 +29,7 @@
     margin: 1rem 1rem 2rem 1rem;
 }
 
-.card{
+.card {
     padding: 20px;
     padding-inline: 40px;
 }
@@ -51,17 +51,21 @@
     margin-block: 5px;
     align-items: center;
     gap: 10px;
-    
 }
 
 .big-num {
     font-size: 3rem;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
 }
 
-.prof-pic{
+.prof-pic {
     width: 75px;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 .footer-left {
@@ -74,6 +78,10 @@
 
 .btn-outline-dark:hover {
     color: var(--primary);
+}
+
+hr {
+    width: 90%;
 }
 
 @media screen and (max-width: 767px) {

@@ -53,8 +53,8 @@
     margin: 1rem 0rem;
     display: flex;
     flex-direction: row;
-    justify-content:center;
-    
+    justify-content: center;
+
     align-items: center;
 }
 
@@ -68,6 +68,10 @@
     font-style: italic;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 .footer-left {
     width: 40%;
 }
@@ -78,6 +82,10 @@
 
 .btn-outline-dark:hover {
     color: var(--primary);
+}
+
+hr {
+    width: 90%;
 }
 
 @media screen and (max-width: 767px) {
