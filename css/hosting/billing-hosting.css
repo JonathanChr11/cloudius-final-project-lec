@@ -99,3 +99,10 @@ hr {
         margin-top: 20px;
     }
 }
+
+@media screen and (max-width: 541px) {
+    #midbil {
+        padding: 40px;
+        align-items: start;
+    }
+}

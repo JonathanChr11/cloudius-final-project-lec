@@ -23,41 +23,53 @@
         <link rel="stylesheet" href="./css/hosting/billing-hosting.css" />
         <!-- JS -->
         <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</head>
-<body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-body sticky-top">
-        <div class="container-fluid mx-sm-5 mx-0">
-            <a class="navbar-brand" href="index.html">
-                <img
-                    class="nav-logo"
-                    src="./assets/logo-cloudius.png"
-                    alt=""
-                />
-            </a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-                class="collapse navbar-collapse"
-                id="navbarSupportedContent"
-            >
-                <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
+    </head>
+    <body>
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg bg-body sticky-top">
+            <div class="container-fluid mx-sm-5 mx-0">
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        class="nav-logo"
+                        src="./assets/logo-cloudius.png"
+                        alt=""
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav gap-3 ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="hosting.html"
+                                >Hosting</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="domain.html">Domain</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto pb-lg-0 pb-3">
                         <a
                             href="contact.html"
                             class="btn btn-primary nav-button"
@@ -68,6 +80,7 @@
                 </div>
             </div>
         </nav>
+        
         <!--BillingHosting-->
         <div id="wrapper">
             <div id="topbil">
@@ -88,7 +101,11 @@
                         <option value="2">Premium Plan</option>
                         <option value="3">Business Plan (Best Value!)</option>
                     </select>
-                    <span class="text-danger visually-hidden" id="hosting-validation-plan">Plan can't be Empty!</span>
+                    <span
+                        class="text-danger visually-hidden"
+                        id="hosting-validation-plan"
+                        >Plan can't be Empty!</span
+                    >
                 </div>
                 <div class="col-sm-5">
                     <label class="" for="specificSizeSelect"
@@ -100,7 +117,11 @@
                         id="hosting-email"
                         placeholder="JohnDoe@gmail.com"
                     />
-                    <span class="text-danger visually-hidden" id="hosting-validation-email">Email can't be Empty!</span>
+                    <span
+                        class="text-danger visually-hidden"
+                        id="hosting-validation-email"
+                        >Email can't be Empty!</span
+                    >
                 </div>
                 <div class="col-sm-5">
                     <label class="" for="specificSizeSelect"
