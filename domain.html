@@ -92,13 +92,14 @@
                     <input
                         type="text"
                         class="form-control small-input"
-                        id="custDname"
+                        id="domain-name"
                         placeholder="Search your Domain"
+                        value=""
                     />
                     <button
                         class="btn btn-primary"
                         type="button"
-                        id="button-addon2"
+                        onclick="domainCheck()"
                     >
                         Check
                     </button>
@@ -207,7 +208,7 @@
                     <div class="card mb-1">
                         <div class="card-body">
                             <div id="isicardb">
-                                <span>JohnDoe.com</span>
+                                <span id="domain-com">.com</span>
                                 <span>Rp.97.000,00</span>
                                 <button
                                     onclick="window.location.href ='billing-domain.html';"
@@ -222,7 +223,7 @@
                     <div class="card mb-1">
                         <div class="card-body">
                             <div id="isicardb">
-                                <span>JohnDoe.id</span>
+                                <span id="domain-id">.id</span>
                                 <span>Rp.45.000,00</span>
                                 <button
                                     onclick="window.location.href ='billing-domain.html';"
@@ -237,7 +238,7 @@
                     <div class="card mb-1">
                         <div class="card-body">
                             <div id="isicardb">
-                                <span>JohnDoe.xyz</span>
+                                <span id="domain-xyz">.xyz</span>
                                 <span>Rp.35.000,00</span>
                                 <button
                                     onclick="window.location.href ='billing-domain.html';"
@@ -252,7 +253,7 @@
                     <div class="card mb-1">
                         <div class="card-body">
                             <div id="isicardb">
-                                <span>JohnDoe.me</span>
+                                <span id="domain-me">.me</span>
                                 <span>Rp.65.000,00</span>
                                 <button
                                     onclick="window.location.href ='billing-domain.html';"

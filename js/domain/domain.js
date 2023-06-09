@@ -1,6 +1,7 @@
-const button = document.getElementById("button-addon2")
-
-button.addEventListener('click', function() {
-  var sementara = document.getElementById("custDname").value;
-    document.getElementById("result").innerHTML = sementara;
-});
+function domainCheck() {
+    var domainName = document.getElementById("domain-name").value;
+    document.getElementById("domain-com").innerHTML = domainName + ".com";
+    document.getElementById("domain-id").innerHTML = domainName + ".id";
+    document.getElementById("domain-xyz").innerHTML = domainName + ".xyz";
+    document.getElementById("domain-me").innerHTML = domainName + ".me";
+}
