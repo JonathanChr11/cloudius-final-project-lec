@@ -136,3 +136,9 @@ hr {
         margin-top: 20px;
     }
 }
+
+@media screen and (max-width: 541px) {
+    #isicardb {
+        flex-direction: column;
+    }
+}
