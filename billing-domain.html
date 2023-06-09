@@ -98,22 +98,24 @@
                     <input
                         type="text"
                         class="form-control"
-                        id="formGroupExampleInput"
+                        id="domain-name"
                         placeholder="JohnDoe.com"
                     />
+                    <span class="text-danger visually-hidden" id="domain-validation-name">Domain name can't be Empty!</span>
                 </div>
                 <div class="col-sm-5">
                     <label class="" for="specificSizeSelect"
                         ><b>Duration</b></label
                     >
-                    <select class="form-select" id="specificSizeSelect">
-                        <option selected>Choose...</option>
+                    <select class="form-select" id="domain-duration">
+                        <option value="choose" selected>Choose...</option>
                         <option value="1">1 Year</option>
                         <option value="2">2 Year</option>
                         <option value="3">3 Year</option>
                         <option value="4">4 Year</option>
                         <option value="5">5 Year</option>
                     </select>
+                    <span class="text-danger visually-hidden" id="domain-validation-duration">Duration can't be Empty!</span>
                 </div>
                 <div class="col-sm-5">
                     <label class="" for="specificSizeSelect"
@@ -122,9 +124,10 @@
                     <input
                         type="email"
                         class="form-control"
-                        id="inputEmail4"
+                        id="domain-email"
                         placeholder="JohnDoe@gmail.com"
                     />
+                    <span class="text-danger visually-hidden" id="domain-validation-email">Email can't be Empty!</span>
                 </div>
                 <div class="col-sm-5">
                     <label class="" for="specificSizeSelect"
@@ -166,13 +169,9 @@
                     <span><b>TOTAL : </b></span>
                     <span id="harga">Rp. 97.000,00</span>
                 </div>
-                <input
-                    id="btn1"
-                    class="btn btn-primary"
-                    type="submit"
-                    value="Purchase"
-                    style="margin-block: 10px; padding-inline: 15px"
-                />
+                <button onclick="purchaseValidation()" class="btn btn-primary">
+                    Purchase
+                </button>
             </div>
         </div>
         <footer

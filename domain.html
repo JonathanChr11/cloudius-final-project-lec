@@ -104,11 +104,12 @@
                         Check
                     </button>
                 </div>
+                <span class="text-danger visually-hidden" id="domain-validation">Domain name can't be Empty!</span>
                 <div id="testi">
                     <h4>Customer Experiences Using Cloudius Domain Services</h4>
                     <div
                         id="plan-cards"
-                        class="d-flex flex-wrap justify-content-lg-between justify-content-center gap-5 mt-lg-2 mt-5"
+                        class="d-flex flex-wrap justify-content-lg-evenly justify-content-center gap-5 mt-lg-2 mt-5"
                     >
                         <div class="card" style="width: 24rem">
                             <div class="card-body">
@@ -133,7 +134,7 @@
                                     </p>
                                     <div class="container">
                                         <img
-                                            class="logo-brands-medium"
+                                            class="logo-brands-medium w-100"
                                             src="assets\brands\gojek.svg"
                                             alt=""
                                         />
@@ -163,7 +164,7 @@
                                     </p>
                                     <div class="container">
                                         <img
-                                            class="logo-brands-medium"
+                                            class="logo-brands-medium w-100"
                                             src="assets\brands\amazon.svg"
                                             alt=""
                                         />
@@ -193,7 +194,7 @@
                                     </p>
                                     <div class="container">
                                         <img
-                                            class="logo-brands-medium"
+                                            class="logo-brands-medium w-100"
                                             src="assets\brands\tencent.svg"
                                             alt=""
                                         />
@@ -210,7 +211,7 @@
                                 <span id="domain-com">.com</span>
                                 <span>Rp.97.000,00</span>
                                 <button
-                                    onclick="window.location.href ='billing-domain.html';"
+                                    onclick="registerValidation()"
                                     type="button"
                                     class="btn btn-primary"
                                 >
@@ -225,7 +226,7 @@
                                 <span id="domain-id">.id</span>
                                 <span>Rp.45.000,00</span>
                                 <button
-                                    onclick="window.location.href ='billing-domain.html';"
+                                    onclick="registerValidation()"
                                     type="button"
                                     class="btn btn-primary"
                                 >
@@ -240,7 +241,7 @@
                                 <span id="domain-xyz">.xyz</span>
                                 <span>Rp.35.000,00</span>
                                 <button
-                                    onclick="window.location.href ='billing-domain.html';"
+                                    onclick="registerValidation()"
                                     type="button"
                                     class="btn btn-primary"
                                 >
@@ -255,7 +256,7 @@
                                 <span id="domain-me">.me</span>
                                 <span>Rp.65.000,00</span>
                                 <button
-                                    onclick="window.location.href ='billing-domain.html';"
+                                    onclick="registerValidation()"
                                     type="button"
                                     class="btn btn-primary"
                                 >
