@@ -21,21 +21,12 @@
     color: var(--primary);
 }
 
-.star-round {
-    width: 25px;
-}
-
-.logo-brands {
-    width: 200px;
-}
-
-.logo-brands-medium {
-    width: 250px;
-}
-
-#exp{
-    background-image: url("/assets/exp.svg");
-    background-size: cover;
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem 1rem 2rem 1rem;
 }
 
 .card{
@@ -73,22 +64,6 @@
     width: 75px;
 }
 
-#topfaq {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    margin-block: 5px;
-}
-
-#isifaq {
-    padding-bottom: 15px;
-}
-
-footer a {
-    text-decoration: none;
-}
-
 .footer-left {
     width: 40%;
 }
@@ -99,10 +74,6 @@ footer a {
 
 .btn-outline-dark:hover {
     color: var(--primary);
-}
-
-hr {
-    width: 90%;
 }
 
 @media screen and (max-width: 767px) {
