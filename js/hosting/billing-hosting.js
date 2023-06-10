@@ -17,5 +17,6 @@ function purchaseValidation() {
         hostingValidationEmail.classList.remove("visually-hidden");
     } else {
         window.location.href = "index.html";
+        alert("Pembelian Hosting Sukses!");
     }
 }

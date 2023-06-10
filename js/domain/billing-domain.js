@@ -20,5 +20,6 @@ function purchaseValidation() {
         domainValidationEmail.classList.remove("visually-hidden");
     } else {
         window.location.href = "index.html";
+        alert("Pembelian Domain Sukses!")
     }
 }
